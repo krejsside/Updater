@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="Launcher1.changelogs"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Launcher1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!-- Tło aplikacji -->
+    <Grid Background="Black">
+
+        <!-- Grid dla przycisków -->
+        <Grid VerticalAlignment="Top" Margin="20,30,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Przycisk "Home" -->
+            <Button Content="Home" Click="OnHomeButtonClick" Background="Transparent" Height="40" BorderThickness="0" Margin="0,0,0,10" FontSize="25">
+                <Button.Foreground>
+                    <SolidColorBrush Color="White"/>
+                </Button.Foreground>
+            </Button>
+
+            <!-- Przycisk "OptymalizacjaBasic" -->
+            <Button Content="OptymalizacjaBasic" Click="OnOptymalizacjaBasicButtonClick" Background="Transparent" Height="50" BorderThickness="0" Margin="0,0,0,15" FontSize="25" Grid.Row="1">
+                <Button.Foreground>
+                    <SolidColorBrush Color="White"/>
+                </Button.Foreground>
+            </Button>
+
+            <!-- Przycisk "Changelogs" -->
+            <Button Content="Changelogs" Click="OnChangelogsButtonClick" Background="Transparent" Height="50" BorderThickness="0" Margin="0,0,0,10" FontSize="25" Grid.Row="2">
+                <Button.Foreground>
+                    <SolidColorBrush Color="White"/>
+                </Button.Foreground>
+            </Button>
+
+            <!-- Przycisk "Settings" -->
+            <Button Content="Settings" Click="OnSettingsButtonClick" Background="Transparent" Height="50" BorderThickness="0" Margin="0,0,0,10" FontSize="25" Grid.Row="3">
+                <Button.Foreground>
+                    <SolidColorBrush Color="White"/>
+                </Button.Foreground>
+            </Button>
+        </Grid>
+
+        <!-- Zawartość changelogs -->
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="0.0.2 added new gui" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+        </Grid>
+
+    </Grid>
+</Page>

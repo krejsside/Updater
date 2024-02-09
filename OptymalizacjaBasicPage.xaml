@@ -1,0 +1,82 @@
+<Page
+    x:Class="Launcher1.OptymalizacjaBasicPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Launcher1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Grid dla przycisków -->
+        <Grid VerticalAlignment="Top" Margin="20,30,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Przycisk "Home" -->
+            <Button Content="Home" Margin="0,0,0,10" FontSize="25" Click="OnHomeButtonClick">
+                <Button.Foreground>
+                    <SolidColorBrush Color="White"/>
+                </Button.Foreground>
+                <Button.Background>
+                    <SolidColorBrush Color="Transparent"/>
+                </Button.Background>
+                <Button.BorderThickness>
+                    <Thickness>0</Thickness>
+                </Button.BorderThickness>
+            </Button>
+
+            <!-- Przycisk "OptymalizacjaBasic" -->
+            <Button Content="OptymalizacjaBasic" Margin="0,0,0,10" FontSize="25" Click="OnOptymalizacjaBasicButtonClick" Grid.Row="1">
+                <Button.Foreground>
+                    <SolidColorBrush Color="White"/>
+                </Button.Foreground>
+                <Button.Background>
+                    <SolidColorBrush Color="Transparent"/>
+                </Button.Background>
+                <Button.BorderThickness>
+                    <Thickness>0</Thickness>
+                </Button.BorderThickness>
+            </Button>
+
+            <!-- Przycisk "Changelogs" -->
+            <Button Content="Changelogs" Margin="0,0,0,10" FontSize="25" Click="OnChangelogsButtonClick" Grid.Row="2">
+                <Button.Foreground>
+                    <SolidColorBrush Color="White"/>
+                </Button.Foreground>
+                <Button.Background>
+                    <SolidColorBrush Color="Transparent"/>
+                </Button.Background>
+                <Button.BorderThickness>
+                    <Thickness>0</Thickness>
+                </Button.BorderThickness>
+            </Button>
+
+            <!-- Przycisk "Settings" -->
+            <Button Content="Settings" Margin="0,0,0,10" FontSize="25" Click="OnSettingsButtonClick" Grid.Row="3">
+                <Button.Foreground>
+                    <SolidColorBrush Color="White"/>
+                </Button.Foreground>
+                <Button.Background>
+                    <SolidColorBrush Color="Transparent"/>
+                </Button.Background>
+                <Button.BorderThickness>
+                    <Thickness>0</Thickness>
+                </Button.BorderThickness>
+            </Button>
+        </Grid>
+
+        <!-- Grid dla zawartoœci -->
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- Tutaj mo¿esz umieœciæ pozosta³¹ zawartoœæ dla zak³adki "OptymalizacjaBasic" -->
+            <TextBlock Text="To jest zak³adka OptymalizacjaBasic" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
+        </Grid>
+
+        <!-- Frame dla nawigacji miêdzy stronami -->
+        <Frame x:Name="MainFrame"/>
+    </Grid>
+</Page>
